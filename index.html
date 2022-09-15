@@ -20,17 +20,53 @@
     <!-- css -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/city.css" />
     <!-- add link for page specific css -->
 
 </head>
 
 <body>
     <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+        <img class="skyline" src="/assets/skyline.png" alt="skyline" height="80">
+        <h1>
+            Build A City
+        </h1> 
     </header>
 
     <main>
+        <section class="builder">
+            <label>
+                Name Your City
+                <input id="city-input">
+            </label>
+            <label>
+                Climate
+                <select id="climate-select">
+                    <option value=" ">Select</option>
+                    <option value="desert">Desert</option>
+                    <option value="forest">Forest</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="coastal">Coastal</option>
+                </select>
+            </label> 
+            <label>
+                Architecture
+                    <select id="architecture-select">
+                    <option value=" ">Select</option>
+                    <option value="hacienda">Hacienda</option>
+                    <option value="rustic">Rustic</option>
+                    <option value="modern">Modern</option>
+                    <option value="bungalow">Bungalow</option>
+                    </select>
+            </label> 
+            <label>
+                Add Attraction
+                <div class="add-attraction">
+                    <input id="attraction-input">
+                    <button id="add button">+</button>
+                </div>   
+            </label>
+        </section>
 
     </main>
 
