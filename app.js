@@ -15,19 +15,47 @@ let city = {
     name: 'Whoville',
     climate: 'forest',
     architecture: 'rustic',
-    attraction: [],
+    attractions: [],
 };
 
 /* Events */
 cityInput.addEventListener('input', () => {
     city.name = cityInput.value;
-    // displayCity();
-})
+    displayCity();
+});
+
+climateSelect.addEventListener('select', () => {
+    city.climate = climateSelect.value;
+    displayCity();
+});
+
+architectureSelect.addEventListener('select', () => {
+    city.architecture = architectureSelect.value;
+    displayCity();
+});
+
+addButton.addEventListener('click', () => {
+    const attractions = attractionInput.value;
+    city.attractions.push(attractions);
+    displayAttractions();
+    attractionInput.value = '';
+
+});
+
+function displayAttractions() {
+    attractionList.innerHTML = '';
+
+    for (let attractions of city.attractions) {
+        const li = document.createElement('li');
+        li.textContent = attractions;
+        attractionList.append(li); 
+    }
+}
 
 /* Display Functions */
-function displayCity() {
-    cityArticle.classList.value = city.climate;
-    city
-}
+// function displayCity() {
+//     cityArticle.classList.value = city.climate;
+//     city
+// }
 
 // (don't forget to call any display functions you want to run on page load!)
