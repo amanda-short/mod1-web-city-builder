@@ -7,13 +7,15 @@ const climateSelect = document.getElementById('climate-select');
 const architectureSelect = document.getElementById('architecture-select');
 const attractionList = document.getElementById('attraction-list');
 const attractionInput = document.getElementById('attraction-input');
-const addButton = document.getElementById('add-button')
+const addButton = document.getElementById('add-button');
 const cityName = document.getElementById('city-name');
+const climateImage = document.getElementById('climate-image');
+const architectureImage = document.getElementById('architecture-image');
 
 
 /* State */
 let city = {
-    name: 'Whoville',
+    name: 'Somewhere',
     climate: 'forest',
     architecture: 'rustic',
     attractions: [],
@@ -25,12 +27,12 @@ cityInput.addEventListener('input', () => {
     displayCity();
 });
 
-climateSelect.addEventListener('select', () => {
+climateSelect.addEventListener('change', () => {
     city.climate = climateSelect.value;
     displayCity();
 });
 
-architectureSelect.addEventListener('select', () => {
+architectureSelect.addEventListener('change', () => {
     city.architecture = architectureSelect.value;
     displayCity();
 });
@@ -44,11 +46,10 @@ addButton.addEventListener('click', () => {
 });
 
 function displayCity() {
-    // cityArticle.classList.value = city.theme;
-    cityInput.textContent = city.name;
-    climateSelect.src = 'assets/climate/' + '.jpeg';
-    architectureSelect.src = 'assets/architecture/' + '.jpeg';
-    console.log(cityInput);
+    cityArticle.classList.value = city.theme;
+    cityName.textContent = city.name;
+    climateImage.src = 'assets/climate/' + city.climate + '.jpeg';
+    architectureImage.src = 'assets/architecture/' + city.architecture + '.jpeg';
 
 }
 
@@ -61,6 +62,8 @@ function displayAttractions() {
         attractionList.append(li); 
     }
 }
+
+
 
 /* Display Functions */
 // function displayCity() {
