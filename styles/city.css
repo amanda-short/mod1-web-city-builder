@@ -1,7 +1,7 @@
 .builder {
     width: 200px;
     display: grid;
-    grid-template-rows: repeat(3, 25px);
+    grid-template-rows: repeat(4, 25px);
     grid-gap: 50px;
 }
 
@@ -9,4 +9,22 @@ label {
     display: grid;
     font-size: .7em;
     gap: 2px;
+}
+
+article {
+    padding: 20px 0;
+        padding-top: 20px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+    display: grid;
+    grid-gap: 50px;
+        row-gap: 10px;
+        column-gap: 10px;
+    justify-items: center;    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
