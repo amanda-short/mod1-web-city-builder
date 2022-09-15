@@ -18,10 +18,25 @@ article {
         padding-bottom: 20px;
         padding-left: 0px;
     display: grid;
+    grid-template-rows: 25px, 25px, 25px, 1fr;
     grid-gap: 50px;
         row-gap: 10px;
         column-gap: 10px;
-    justify-items: center;    
+    justify-items: center;
+    height: 400px;
+    width: 500px; 
+    border: 2px;
+    border-style: solid;
+    border-color: white; 
+    margin-left: 15px;  
+}
+
+#climate-image {
+    width: 200px;
+}
+
+#architecture-image {
+    width: 200px;
 }
 
 main {

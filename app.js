@@ -8,6 +8,7 @@ const architectureSelect = document.getElementById('architecture-select');
 const attractionList = document.getElementById('attraction-list');
 const attractionInput = document.getElementById('attraction-input');
 const addButton = document.getElementById('add-button')
+const cityName = document.getElementById('city-name');
 
 
 /* State */
@@ -41,6 +42,15 @@ addButton.addEventListener('click', () => {
     attractionInput.value = '';
 
 });
+
+function displayCity() {
+    // cityArticle.classList.value = city.theme;
+    cityInput.textContent = city.name;
+    climateSelect.src = 'assets/climate/' + '.jpeg';
+    architectureSelect.src = 'assets/architecture/' + '.jpeg';
+    console.log(cityInput);
+
+}
 
 function displayAttractions() {
     attractionList.innerHTML = '';
