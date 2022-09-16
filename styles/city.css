@@ -42,3 +42,48 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* .bungalow {
+    font-family: 'Concert One';
+    font-size: 1rem;
+}
+
+.hacienda {
+    font-family: 'Space Grotesk';
+    font-size: 0.9rem;
+    background-color: #040404;
+}
+
+.modern {
+    font-family: 'Lato';
+    font-size: 0.9rem;
+}
+
+.rustic {
+    font-family: 'Courier New';
+    font-size: 0.9rem;
+}
+
+.coastal {
+    background: #240047;
+    color: #40ffdc;
+    border: 3px solid #00a9d4;
+}
+
+.desert {
+    background: #876b53;
+    color: #eee4a9;
+    border: 3px solid #fbcac5;
+}
+
+.forest {
+    background: #e9f2f9;
+    color: #1b325f;
+    border: 3px solid #3a89c9;
+}
+
+.mountain {
+    background: #038cf5;
+    color: #5e697e;
+    border: 3px solid #040404;
+} */
