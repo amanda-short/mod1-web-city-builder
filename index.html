@@ -20,17 +20,79 @@
     <!-- css -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/city.css" />
     <!-- add link for page specific css -->
 
 </head>
 
 <body>
     <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+        <img class="skyline" src="./assets/skyline.png" alt="skyline" height="80">
+        <h1>
+            Build A City
+        </h1> 
     </header>
 
     <main>
+        <section class="builder">
+            <label>
+                Name Your City
+                <input id="city-input">
+            </label>
+            <label>
+                Climate
+                <select id="climate-select">
+                    <option value=" ">Select</option>
+                    <option value="desert">Desert</option>
+                    <option value="forest">Forest</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="coastal">Coastal</option>
+                </select>
+            </label> 
+            <label>
+                Architecture
+                    <select id="architecture-select">
+                    <option value=" ">Select</option>
+                    <option value="hacienda">Hacienda</option>
+                    <option value="rustic">Rustic</option>
+                    <option value="modern">Modern</option>
+                    <option value="bungalow">Bungalow</option>
+                    </select>
+            </label> 
+            <label>
+                Add Attraction
+                <div class="add-attraction">
+                    <input id="attraction-input">
+                    <button id="add-button">+</button>
+                </div>   
+            </label>
+        </section>
+
+<!-- //WORK IN CSS FOR CLASSES// -->
+
+    <article id="city-article">
+        <h2>
+            You have entered...
+        </h2>
+        <h1>
+            <span id="city-name">Somewhere</span>
+        </h1>
+        <div>
+            <img
+                id="climate-image"
+                src="/assets/climate/forest.jpeg"
+                alt="Forest"
+            />
+            <img
+                id="architecture-image"
+                src="/assets/architecture/bungalow.jpeg"
+                alt="Bungalow"  
+            />  
+            <ul id="attraction-list">
+            <!-- <li>dust storms</li> -->
+            </ul>
+        </div>
+    </article>
 
     </main>
 
